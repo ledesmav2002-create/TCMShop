@@ -57,7 +57,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares inalámbricos Redragon en color azul.",
     precio: 74492,
-    imagen: "",
+    imagen: "imagen2.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -66,7 +66,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares inalámbricos Redragon en color negro.",
     precio: 74418,
-    imagen: "",
+    imagen: "imagen3.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -111,7 +111,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color negro.",
     precio: 26040,
-    imagen: "",
+    imagen: "imagen5.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -120,7 +120,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color blanco.",
     precio: 26040,
-    imagen: "",
+    imagen: "imagen6.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -138,7 +138,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon en color celeste.",
     precio: 54870,
-    imagen: "",
+    imagen: "imagen8.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -156,7 +156,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares gamer con iluminación RGB.",
     precio: 40920,
-    imagen: "",
+    imagen: "imagen1.jpg",
     etiqueta: "RGB"
   },
   {
@@ -165,7 +165,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado compacto inalámbrico RGB con distribución española.",
     precio: 62310,
-    imagen: "",
+    imagen: "imagen12.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -174,7 +174,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado compacto inalámbrico RGB blanco y gris, distribución española.",
     precio: 62310,
-    imagen: "",
+    imagen: "imagen13.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -183,7 +183,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
     precio: 50220,
-    imagen: "",
+    imagen: "imagen14.jpg",
     etiqueta: "LCD"
   }
 ];
