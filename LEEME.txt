@@ -1,0 +1,54 @@
+SHOP — GUÍA RÁPIDA
+======================
+
+ARCHIVOS
+- index.html: estructura de la página.
+- styles.css: diseño, colores y adaptación a celulares.
+- products.js: catálogo editable (nombres, precios, fotos y categorías).
+- imagenes/logo-shop.png: tu logo oficial incluido en la cabecera.
+- script.js: buscador, filtros y enlaces a WhatsApp.
+
+IMPORTANTE ANTES DE PUBLICAR
+1. Abrí products.js con el Bloc de notas o un editor de texto.
+2. Reemplazá los productos de ejemplo por tus productos reales y sus precios.
+   Los precios actuales son SOLO EJEMPLOS, no son cotizaciones reales.
+3. En cada producto, para agregar una foto, creá una carpeta llamada "imagenes"
+   y guardá allí la foto. Después escribí, por ejemplo: imagen: "imagenes/mouse-redragon.jpg"
+4. Verificá el WhatsApp en script.js. Está configurado como 5493416862971
+   (formato internacional para Argentina). Probá todos los botones antes de compartir.
+5. No cambies los nombres de los archivos.
+
+PROBAR EN TU PC
+1. Extraé la carpeta ZIP en un lugar fácil de encontrar.
+2. Abrí index.html con Chrome, Edge o Firefox.
+3. Probá el buscador, las categorías y los botones de WhatsApp.
+No necesitás instalar programas para probar la versión básica.
+
+PUBLICAR GRATIS CON GITHUB PAGES
+1. Creá una cuenta en https://github.com/
+2. Creá un repositorio nuevo, por ejemplo: tcm-shop.
+3. Subí index.html, styles.css, products.js y script.js al repositorio
+   (también la carpeta imagenes, cuando la tengas).
+4. Entrá a Settings > Pages.
+5. En Build and deployment, elegí "Deploy from a branch".
+6. Elegí la rama "main" y la carpeta "/ (root)" y guardá.
+7. Esperá unos minutos. GitHub mostrará la dirección pública de la web.
+   Podrá tener un formato como https://TUUSUARIO.github.io/tcm-shop/
+   (la dirección exacta la genera GitHub; no la inventes antes de publicarla).
+
+ALTERNATIVA MÁS VISUAL
+También podés publicar estos mismos archivos en https://www.netlify.com/:
+creá una cuenta y seguí el proceso de despliegue manual que ofrezca el panel.
+Los nombres de menú pueden cambiar con el tiempo.
+
+COSTOS
+El alojamiento básico puede ser gratis. Un dominio propio es opcional y puede tener
+costo. Como es una web estática, no tiene panel de administración: para cambiar precios
+o productos, editás products.js y volvés a subir el archivo actualizado.
+
+NOTAS
+- No hay carrito ni cobro dentro de la página: cada botón abre WhatsApp con un mensaje
+  que incluye producto y precio.
+- El catálogo inicial tiene productos y precios de ejemplo. Cambialos antes de anunciar
+  la página públicamente.
+- Las imágenes son opcionales; si no agregás una, se muestra un símbolo decorativo.

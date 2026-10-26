@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Shop: periféricos gamer. Consultá disponibilidad y comprá por WhatsApp.">
+  <title>SHOP | Periféricos Gamer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Shop inicio">
+      <img class="brand-logo" src="imagenes/logo-shop.png" alt="Logo Shop">
+      <span class="brand-copy"><strong>SHOP</strong><small>PERIFÉRICOS GAMER</small></span>
+    </a>
+    <a class="header-cta" href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20quiero%20hacer%20una%20consulta." target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> TU SETUP, TU ESTILO</p>
+        <h1>SUBÍ DE NIVEL.<br><span>EQUIPÁ TU SETUP.</span></h1>
+        <p class="hero-description">Periféricos gamer para jugar con todo. Encontrá tu próximo upgrade y consultanos directo por WhatsApp.</p>
+        <a class="primary-button" href="#productos">VER PRODUCTOS <span>↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="hero-card">
+          <div class="hero-card-top"><span>SHOP / GEAR</span><span>01—05</span></div>
+          <div class="crosshair">✳</div>
+          <div class="hero-card-bottom">PLAY DIFFERENT.<br><b>PLAY DIFFERENT.</b></div>
+        </div>
+        <div class="floating-tag">GAMING<br>GEAR</div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="productos">
+      <div class="section-heading">
+        <div><p class="eyebrow">CATÁLOGO TCM</p><h2>ENCONTRÁ TU <span>PRÓXIMO NIVEL</span></h2></div>
+        <p class="section-note">Elegí un producto y consultá por WhatsApp.</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-box"><span>⌕</span><input id="search" type="search" placeholder="Buscar productos..." aria-label="Buscar productos"></label>
+        <div class="filters" id="filters" aria-label="Filtrar por categoría">
+          <button class="filter active" data-category="Todos">Todos</button>
+          <button class="filter" data-category="Mouse">Mouse</button>
+          <button class="filter" data-category="Teclados">Teclados</button>
+          <button class="filter" data-category="Auriculares">Auriculares</button>
+          <button class="filter" data-category="Combos">Combos</button>
+          <button class="filter" data-category="Accesorios">Accesorios</button>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      <p class="empty-state" id="empty-state" hidden>No encontramos productos con esa búsqueda.</p>
+      <p class="catalog-hint">¿Buscás algo que no aparece? <a href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20estoy%20buscando%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo." target="_blank" rel="noopener">Consultanos por WhatsApp.</a></p>
+    </section>
+    <section class="contact-strip">
+      <div><p class="eyebrow">¿TENÉS DUDAS?</p><h2>HABLEMOS DE TU <span>PRÓXIMO UPGRADE.</span></h2></div>
+      <a class="primary-button" href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20quiero%20consultar%20por%20un%20producto." target="_blank" rel="noopener">ESCRIBINOS <span>↗</span></a>
+    </section>
+  </main>
+  <footer><a class="footer-brand" href="#">TCM SHOP</a><p>Periféricos gamer. La próxima partida empieza acá.</p><small>© <span id="year"></span> Shop</small></footer>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
