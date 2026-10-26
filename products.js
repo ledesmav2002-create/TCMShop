@@ -1,17 +1,189 @@
+
 /*
-  EDITÁ TUS PRODUCTOS ACÁ.
-  - Cambiá nombre, categoría, descripción y precio.
-  - El precio se escribe como número sin puntos: 45000 = $ 45.000.
-  - Para una foto, poné la ruta de una imagen en "imagen", por ejemplo: "imagenes/mouse.jpg".
-  - Si no tenés foto todavía, dejá imagen: "" y se mostrará un ícono.
+  CATÁLOGO TCM SHOP
+  Precios calculados con un 20% sobre el costo.
+  Para agregar fotos, subilas al repositorio y colocá
+  la ruta del archivo en la propiedad "imagen".
 */
 const PRODUCTS = [
-  { id: 1, nombre: "Combo Teclado Y Mouse Redragon S146", categoria: "Combo", descripcion: "Tu combo perfecto para iniciar en el mundo gamer.", precio: 80000, imagen: "Combo Teclado Y Mouse Redragon S146.jpg", etiqueta: "GAMING" },
-  { id: 2, nombre: "Teclado Gamer Mecánico", categoria: "Teclados", descripcion: "Comodidad y respuesta rápida.", precio: 65000, imagen: "", etiqueta: "GAMING" },
-  { id: 3, nombre: "Auriculares Gamer", categoria: "Auriculares", descripcion: "Inmersión para cada partida.", precio: 55000, imagen: "", etiqueta: "AUDIO" },
-  { id: 4, nombre: "Combo Teclado + Mouse", categoria: "Combos", descripcion: "Dos esenciales para tu setup.", precio: 67000, imagen: "", etiqueta: "COMBO" },
-  { id: 5, nombre: "Mouse Inalámbrico", categoria: "Mouse", descripcion: "Libertad de movimiento.", precio: 48000, imagen: "", etiqueta: "WIRELESS" },
-  { id: 6, nombre: "Mousepad Gamer", categoria: "Accesorios", descripcion: "Más espacio para jugar.", precio: 18000, imagen: "", etiqueta: "SETUP" },
-  { id: 7, nombre: "Auriculares RGB", categoria: "Auriculares", descripcion: "Audio y estilo gamer.", precio: 72000, imagen: "", etiqueta: "RGB" },
-  { id: 8, nombre: "Combo Gamer Pro", categoria: "Combos", descripcion: "Equipá tu estación de juego.", precio: 99000, imagen: "", etiqueta: "DESTACADO" }
+  {
+    id: 1,
+    nombre: "Combo Teclado y Mouse Redragon S146",
+    categoria: "Combos",
+    descripcion: "Combo gamer Redragon para equipar tu setup.",
+    precio: 80407,
+    imagen: "Combo Teclado Y Mouse Redragon S146.jpg",
+    etiqueta: "COMBO"
+  },
+  {
+    id: 2,
+    nombre: "Mouse Redragon King M916 Pro Inalámbrico Negro",
+    categoria: "Mouse",
+    descripcion: "Mouse inalámbrico Redragon para gaming.",
+    precio: 54052,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 3,
+    nombre: "Mouse Redragon Cobra M711 Blanco",
+    categoria: "Mouse",
+    descripcion: "Mouse gamer Redragon en color blanco.",
+    precio: 26170,
+    imagen: "",
+    etiqueta: "GAMING"
+  },
+  {
+    id: 4,
+    nombre: "Auricular Redragon Cronus Negro",
+    categoria: "Auriculares",
+    descripcion: "Auriculares gamer Redragon.",
+    precio: 33535,
+    imagen: "",
+    etiqueta: "AUDIO"
+  },
+  {
+    id: 5,
+    nombre: "Auricular Redragon Zeus X H510 RGB Negro",
+    categoria: "Auriculares",
+    descripcion: "Auriculares gamer con iluminación RGB.",
+    precio: 101946,
+    imagen: "",
+    etiqueta: "RGB"
+  },
+  {
+    id: 6,
+    nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Azul",
+    categoria: "Auriculares",
+    descripcion: "Auriculares inalámbricos Redragon en color azul.",
+    precio: 74492,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 7,
+    nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Negro",
+    categoria: "Auriculares",
+    descripcion: "Auriculares inalámbricos Redragon en color negro.",
+    precio: 74418,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 8,
+    nombre: "Teclado Redragon Kumara 2 K552 Rainbow Blanco",
+    categoria: "Teclados",
+    descripcion: "Teclado Redragon con iluminación Rainbow.",
+    precio: 55391,
+    imagen: "",
+    etiqueta: "RAINBOW"
+  },
+  {
+    id: 9,
+    nombre: "Teclado Redragon Kumara 2 K552 Rainbow Negro",
+    categoria: "Teclados",
+    descripcion: "Teclado Redragon con iluminación Rainbow.",
+    precio: 53958,
+    imagen: "",
+    etiqueta: "RAINBOW"
+  },
+  {
+    id: 10,
+    nombre: "Teclado Redragon Kumara K552 RBN Magnético Negro",
+    categoria: "Teclados",
+    descripcion: "Teclado gamer Redragon magnético.",
+    precio: 75199,
+    imagen: "",
+    etiqueta: "GAMING"
+  },
+  {
+    id: 11,
+    nombre: "Teclado Redragon Dragonborn K630 Negro",
+    categoria: "Teclados",
+    descripcion: "Teclado compacto Redragon para tu setup.",
+    precio: 43338,
+    imagen: "",
+    etiqueta: "COMPACTO"
+  },
+  {
+    id: 12,
+    nombre: "Mouse Redragon K1ng Negro",
+    categoria: "Mouse",
+    descripcion: "Mouse gamer Redragon en color negro.",
+    precio: 26040,
+    imagen: "",
+    etiqueta: "GAMING"
+  },
+  {
+    id: 13,
+    nombre: "Mouse Redragon K1ng Blanco",
+    categoria: "Mouse",
+    descripcion: "Mouse gamer Redragon en color blanco.",
+    precio: 26040,
+    imagen: "",
+    etiqueta: "GAMING"
+  },
+  {
+    id: 14,
+    nombre: "Mouse Redragon King M916 Pro Inalámbrico Blanco",
+    categoria: "Mouse",
+    descripcion: "Mouse inalámbrico Redragon en color blanco.",
+    precio: 59520,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 15,
+    nombre: "Mouse Redragon ST4R Pro Inalámbrico Celeste",
+    categoria: "Mouse",
+    descripcion: "Mouse inalámbrico Redragon en color celeste.",
+    precio: 54870,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 16,
+    nombre: "Auricular Redragon Cronus Blanco",
+    categoria: "Auriculares",
+    descripcion: "Auriculares gamer Redragon en color blanco.",
+    precio: 38130,
+    imagen: "",
+    etiqueta: "AUDIO"
+  },
+  {
+    id: 17,
+    nombre: "Auricular Redragon Hylas Negro RGB",
+    categoria: "Auriculares",
+    descripcion: "Auriculares gamer con iluminación RGB.",
+    precio: 40920,
+    imagen: "",
+    etiqueta: "RGB"
+  },
+  {
+    id: 18,
+    nombre: "Teclado Redragon Fizz Pro 60% Inalámbrico RGB Negro ESP",
+    categoria: "Teclados",
+    descripcion: "Teclado compacto inalámbrico RGB con distribución española.",
+    precio: 62310,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 19,
+    nombre: "Teclado Redragon Fizz Pro 60% Inalámbrico RGB Blanco/Gris ESP",
+    categoria: "Teclados",
+    descripcion: "Teclado compacto inalámbrico RGB blanco y gris, distribución española.",
+    precio: 62310,
+    imagen: "",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 20,
+    nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
+    categoria: "Teclados",
+    descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
+    precio: 50220,
+    imagen: "",
+    etiqueta: "LCD"
+  }
 ];
