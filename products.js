@@ -6,7 +6,7 @@
   - Si no tenés foto todavía, dejá imagen: "" y se mostrará un ícono.
 */
 const PRODUCTS = [
-  { id: 1, nombre: "Combo Teclado Y Mouse Redragon S146", categoria: "Combo", descripcion: "Tu combo perfecto para iniciar en el mundo gamer.", precio: 80000, imagen: "imagenes/Combo Teclado Y Mouse Redragon S146.jpg", etiqueta: "GAMING" },
+  { id: 1, nombre: "Combo Teclado Y Mouse Redragon S146", categoria: "Combo", descripcion: "Tu combo perfecto para iniciar en el mundo gamer.", precio: 80000, imagen: "Combo Teclado Y Mouse Redragon S146.jpg", etiqueta: "GAMING" },
   { id: 2, nombre: "Teclado Gamer Mecánico", categoria: "Teclados", descripcion: "Comodidad y respuesta rápida.", precio: 65000, imagen: "", etiqueta: "GAMING" },
   { id: 3, nombre: "Auriculares Gamer", categoria: "Auriculares", descripcion: "Inmersión para cada partida.", precio: 55000, imagen: "", etiqueta: "AUDIO" },
   { id: 4, nombre: "Combo Teclado + Mouse", categoria: "Combos", descripcion: "Dos esenciales para tu setup.", precio: 67000, imagen: "", etiqueta: "COMBO" },
