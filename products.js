@@ -21,7 +21,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon para gaming.",
     precio: 54052,
-    imagen: "mouseking1kb.jpg",
+    imagen: "imagenes/mouseking1kb.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -129,7 +129,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon en color blanco.",
     precio: 59520,
-    imagen: "mouseking1k.jpg",
+    imagen: "/imagenes/mouseking1k.jpg",
     etiqueta: "WIRELESS"
   },
   {
