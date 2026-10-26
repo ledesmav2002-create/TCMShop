@@ -4,3 +4,18 @@
 @media(max-width:1000px){.product-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero{padding-top:55px;padding-bottom:55px}.product-image{height:170px}}
 @media(max-width:720px){.site-header{height:70px}.hero{grid-template-columns:1fr;padding:55px 24px 35px;gap:10px}.hero-art{min-height:250px}.hero-card{height:245px;width:210px}.crosshair{font-size:80px}.floating-tag{right:8%;bottom:16px}.section-heading{align-items:start;flex-direction:column;gap:12px}.toolbar{align-items:stretch}.search-box{width:100%}.filters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.filter{white-space:nowrap}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-image{height:145px}.product-info{padding:12px}.product-info h3{font-size:12px;min-height:34px}.product-description{font-size:10px}.price{font-size:17px}.contact-strip{align-items:start;flex-direction:column}.contact-strip .primary-button{align-self:flex-start}footer{gap:10px}footer p{flex-basis:100%;order:3;margin:0}}
 @media(max-width:370px){.product-grid{grid-template-columns:1fr}.product-image{height:200px}.hero h1{font-size:40px}}
+.crosshair {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.crosshair img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
