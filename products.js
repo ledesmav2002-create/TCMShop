@@ -21,7 +21,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon para gaming.",
     precio: 54052,
-    imagen: "",
+    imagen: "mouseking1kb.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -93,7 +93,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado gamer Redragon magnético.",
     precio: 75199,
-    imagen: "",
+    imagen: "imagen9.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -129,7 +129,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon en color blanco.",
     precio: 59520,
-    imagen: "",
+    imagen: "mouseking1k",
     etiqueta: "WIRELESS"
   },
   {
