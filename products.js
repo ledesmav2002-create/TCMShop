@@ -185,5 +185,88 @@ const PRODUCTS = [
     precio: 50220,
     imagen: "imagenes/volcanonegro (1).jpg",
     etiqueta: "LCD"
-  }
+  },
 ];
+  ,
+  {
+    id: 21,
+    nombre: "Sticker Logo TCM Sin Fondo",
+    categoria: "Stickers",
+    descripcion: "Sticker con el logo de The Collision Major sin fondo.",
+    precio: 2000,
+    imagen: "imagenes/sticker-tcm-sinfondo.png",
+    etiqueta: "TCM"
+  },
+  {
+    id: 22,
+    nombre: "Sticker Logo TCM con Letras",
+    categoria: "Stickers",
+    descripcion: "Sticker con el logo y las letras de The Collision Major.",
+    precio: 2000,
+    imagen: "imagenes/sticker-tcm-letras.png",
+    etiqueta: "TCM"
+  },
+  {
+    id: 23,
+    nombre: "Sticker Apicultores Esports",
+    categoria: "Stickers",
+    descripcion: "Sticker con el logo de Apicultores Esports.",
+    precio: 2000,
+    imagen: "imagenes/sticker-apicultores.png",
+    etiqueta: "ESPORTS"
+  },
+  {
+    id: 24,
+    nombre: "Sticker Zapadores Esports",
+    categoria: "Stickers",
+    descripcion: "Sticker con el logo de Zapadores Esports.",
+    precio: 2000,
+    imagen: "imagenes/sticker-zapadores.png",
+    etiqueta: "ESPORTS"
+  },
+  {
+    id: 25,
+    nombre: "Mousepad 1",
+    categoria: "Mousepads",
+    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    precio: 0,
+    imagen: "imagenes/mousepad1.jpg",
+    etiqueta: "MOUSEPAD"
+  },
+  {
+    id: 26,
+    nombre: "Mousepad 2",
+    categoria: "Mousepads",
+    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    precio: 0,
+    imagen: "imagenes/mousepad2.jpg",
+    etiqueta: "MOUSEPAD"
+  },
+  {
+    id: 27,
+    nombre: "Mousepad 3",
+    categoria: "Mousepads",
+    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    precio: 0,
+    imagen: "imagenes/mousepad3.jpg",
+    etiqueta: "MOUSEPAD"
+  },
+  {
+    id: 28,
+    nombre: "Mousepad 4",
+    categoria: "Mousepads",
+    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    precio: 0,
+    imagen: "imagenes/mousepad4.jpg",
+    etiqueta: "MOUSEPAD"
+  },
+  {
+    id: 29,
+    nombre: "Mousepad 5",
+    categoria: "Mousepads",
+    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    precio: 0,
+    imagen: "imagenes/mousepad5.jpg",
+    etiqueta: "MOUSEPAD"
+  }
+
