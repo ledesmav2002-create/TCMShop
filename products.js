@@ -30,7 +30,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color blanco.",
     precio: 26170,
-    imagen: "",
+    imagen: "imagenes/cobrablanco.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -93,7 +93,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado gamer Redragon magnético.",
     precio: 75199,
-    imagen: "",
+    imagen: "imagenes/kumaramagnegro",
     etiqueta: "GAMING"
   },
   {
@@ -120,7 +120,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color blanco.",
     precio: 26040,
-    imagen: "Imagen6.jpg",
+    imagen: "imagenes/kingcableblanco.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -165,7 +165,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado compacto inalámbrico RGB con distribución española.",
     precio: 62310,
-    imagen: "Imagen12.jpg",
+    imagen: "imagenes/fizznegro.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -174,7 +174,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado compacto inalámbrico RGB blanco y gris, distribución española.",
     precio: 62310,
-    imagen: "Imagen13.jpg",
+    imagen: "imagenes/fizzgris.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -183,7 +183,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
     precio: 50220,
-    imagen: "Imagen14.jpg",
+    imagen: "imagenes/volcanonegro.jpg",
     etiqueta: "LCD"
   }
 ];
