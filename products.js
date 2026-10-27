@@ -191,7 +191,7 @@ const PRODUCTS = [
     categoria: "Stickers",
     descripcion: "Sticker con el logo de The Collision Major sin fondo.",
     precio: 2000,
-    imagen: "imagenes/sticker-tcm-sinfondo.png",
+    imagen: "imagenes/1.png",
     etiqueta: "TCM"
   },
   {
@@ -200,7 +200,7 @@ const PRODUCTS = [
     categoria: "Stickers",
     descripcion: "Sticker con el logo y las letras de The Collision Major.",
     precio: 2000,
-    imagen: "imagenes/sticker-tcm-letras.png",
+    imagen: "imagenes/tcmlogoletras.jpg",
     etiqueta: "TCM"
   },
   {
@@ -209,7 +209,7 @@ const PRODUCTS = [
     categoria: "Stickers",
     descripcion: "Sticker con el logo de Apicultores Esports.",
     precio: 2000,
-    imagen: "imagenes/sticker-apicultores.png",
+    imagen: "imagenes/logoapi.png",
     etiqueta: "ESPORTS"
   },
   {
@@ -218,7 +218,7 @@ const PRODUCTS = [
     categoria: "Stickers",
     descripcion: "Sticker con el logo de Zapadores Esports.",
     precio: 2000,
-    imagen: "imagenes/sticker-zapadores.png",
+    imagen: "imagenes/logozapa.png",
     etiqueta: "ESPORTS"
   },
   {
