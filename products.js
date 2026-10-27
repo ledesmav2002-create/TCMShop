@@ -30,7 +30,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color blanco.",
     precio: 26170,
-    imagen: "imagenes/cobrablanco.jpg",
+    imagen: "imagenes/mousecobrablanco.jpg",
     etiqueta: "GAMING"
   },
   {
