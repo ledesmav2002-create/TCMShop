@@ -12,7 +12,7 @@ const PRODUCTS = [
     categoria: "Combos",
     descripcion: "Combo gamer Redragon para equipar tu setup.",
     precio: 80407,
-    imagen: "Combo Teclado Y Mouse Redragon S146.jpg",
+    imagen: "/imagenes/combo146.jpg",
     etiqueta: "COMBO"
   },
   {
@@ -39,7 +39,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares gamer Redragon.",
     precio: 33535,
-    imagen: "",
+    imagen: "imagenes/cronusnegro.jpg",
     etiqueta: "AUDIO"
   },
   {
@@ -48,7 +48,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares gamer con iluminación RGB.",
     precio: 101946,
-    imagen: "",
+    imagen: "imagenes/zeusnegro.jpg",
     etiqueta: "RGB"
   },
   {
@@ -57,7 +57,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares inalámbricos Redragon en color azul.",
     precio: 74492,
-    imagen: "Imagen2.jpg",
+    imagen: "imagenes/ireproazul.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -66,7 +66,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares inalámbricos Redragon en color negro.",
     precio: 74418,
-    imagen: "Imagen3.jpg",
+    imagen: "imagenes/irepronegro.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -75,7 +75,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon con iluminación Rainbow.",
     precio: 55391,
-    imagen: "",
+    imagen: "imagenes/kumarablanco.jpg",
     etiqueta: "RAINBOW"
   },
   {
@@ -84,7 +84,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon con iluminación Rainbow.",
     precio: 53958,
-    imagen: "",
+    imagen: "imagenes/kumara negro.jpg",
     etiqueta: "RAINBOW"
   },
   {
@@ -93,7 +93,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado gamer Redragon magnético.",
     precio: 75199,
-    imagen: "Imagen9.jpg",
+    imagen: "",
     etiqueta: "GAMING"
   },
   {
@@ -102,7 +102,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado compacto Redragon para tu setup.",
     precio: 43338,
-    imagen: "",
+    imagen: "imagenes/dragonbornnegro.jpg",
     etiqueta: "COMPACTO"
   },
   {
@@ -111,7 +111,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse gamer Redragon en color negro.",
     precio: 26040,
-    imagen: "Imagen5.jpg",
+    imagen: "imagenes/kingcablenegro.jpg",
     etiqueta: "GAMING"
   },
   {
@@ -138,7 +138,7 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon en color celeste.",
     precio: 54870,
-    imagen: "Imagen8.jpg",
+    imagen: "imagenes/starproceleste.jpg",
     etiqueta: "WIRELESS"
   },
   {
@@ -147,7 +147,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares gamer Redragon en color blanco.",
     precio: 38130,
-    imagen: "",
+    imagen: "imagenes/cronusblanco.jpg",
     etiqueta: "AUDIO"
   },
   {
@@ -156,7 +156,7 @@ const PRODUCTS = [
     categoria: "Auriculares",
     descripcion: "Auriculares gamer con iluminación RGB.",
     precio: 40920,
-    imagen: "Imagen1.jpg",
+    imagen: "imagenes/hylasnegro.jpg",
     etiqueta: "RGB"
   },
   {
