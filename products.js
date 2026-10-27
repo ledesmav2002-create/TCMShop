@@ -1,9 +1,8 @@
 
 /*
   CATÁLOGO TCM SHOP
-  Precios calculados con un 20% sobre el costo.
-  Para agregar fotos, subilas al repositorio y colocá
-  la ruta del archivo en la propiedad "imagen".
+  Para agregar fotos, subilas a la carpeta imagenes
+  del repositorio y colocá la ruta en la propiedad "imagen".
 */
 const PRODUCTS = [
   {
@@ -145,7 +144,7 @@ const PRODUCTS = [
     id: 16,
     nombre: "Auricular Redragon Cronus Blanco",
     categoria: "Auriculares",
-    descripcion: "Auriculares gamer Redragon en color blanco.",
+    descripcion: "Auriculares gamer Redragon.",
     precio: 38130,
     imagen: "imagenes/cronusblanco.jpg",
     etiqueta: "AUDIO"
@@ -186,8 +185,6 @@ const PRODUCTS = [
     imagen: "imagenes/volcanonegro (1).jpg",
     etiqueta: "LCD"
   },
-];
-  ,
   {
     id: 21,
     nombre: "Sticker Logo TCM Sin Fondo",
@@ -228,7 +225,7 @@ const PRODUCTS = [
     id: 25,
     nombre: "Mousepad 1",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    descripcion: "Mousepad gamer. Editá la descripción cuando quieras.",
     precio: 0,
     imagen: "imagenes/mousepad1.jpg",
     etiqueta: "MOUSEPAD"
@@ -237,7 +234,7 @@ const PRODUCTS = [
     id: 26,
     nombre: "Mousepad 2",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    descripcion: "Mousepad gamer. Editá la descripción cuando quieras.",
     precio: 0,
     imagen: "imagenes/mousepad2.jpg",
     etiqueta: "MOUSEPAD"
@@ -246,7 +243,7 @@ const PRODUCTS = [
     id: 27,
     nombre: "Mousepad 3",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    descripcion: "Mousepad gamer. Editá la descripción cuando quieras.",
     precio: 0,
     imagen: "imagenes/mousepad3.jpg",
     etiqueta: "MOUSEPAD"
@@ -255,7 +252,7 @@ const PRODUCTS = [
     id: 28,
     nombre: "Mousepad 4",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    descripcion: "Mousepad gamer. Editá la descripción cuando quieras.",
     precio: 0,
     imagen: "imagenes/mousepad4.jpg",
     etiqueta: "MOUSEPAD"
@@ -264,9 +261,9 @@ const PRODUCTS = [
     id: 29,
     nombre: "Mousepad 5",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer. Próximamente más detalles.",
+    descripcion: "Mousepad gamer. Editá la descripción cuando quieras.",
     precio: 0,
     imagen: "imagenes/mousepad5.jpg",
     etiqueta: "MOUSEPAD"
   }
-
+];
