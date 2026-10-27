@@ -200,7 +200,7 @@ const PRODUCTS = [
     categoria: "Stickers",
     descripcion: "Sticker con el logo y las letras de The Collision Major.",
     precio: 2000,
-    imagen: "imagenes/tcmlogoletras.jpg",
+    imagen: "imagenes/tcmlogoletras.png",
     etiqueta: "TCM"
   },
   {
