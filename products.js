@@ -93,7 +93,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado gamer Redragon magnético.",
     precio: 75199,
-    imagen: "imagenes/kumaramagnegro",
+    imagen: "imagenes/kumaramagnegro (1).jpg",
     etiqueta: "GAMING"
   },
   {
@@ -183,7 +183,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
     precio: 50220,
-    imagen: "imagenes/volcanonegro.jpg",
+    imagen: "imagenes/volcanonegro (1).jpg",
     etiqueta: "LCD"
   }
 ];
