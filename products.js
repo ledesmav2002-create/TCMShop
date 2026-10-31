@@ -44,7 +44,7 @@ const PRODUCTS = [
     nombre: "Sticker Zapadores Esports",
     categoria: "Accesorios",
     descripcion: "Sticker con el logo de Zapadores Esports.",
-    precio: 2000,
+    precio: 1300,
     imagen: "imagenes/logozapa.png",
     etiqueta: "ESPORTS"
   },
