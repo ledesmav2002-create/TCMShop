@@ -147,7 +147,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado gamer Redragon magnético.",
     precio: 81000,
-    imagen: "imagenes/kumaramagnegro (1).jpg",
+    imagen: "imagenes/kumaramag.png",
     etiqueta: "GAMING"
   },
   {
