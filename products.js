@@ -17,7 +17,7 @@ const PRODUCTS = [
     nombre: "Sticker Logo TCM Sin Fondo",
     categoria: "Stickers",
     descripcion: "Sticker con el logo de The Collision Major sin fondo.",
-    precio: 2000,
+    precio: 1300,
     imagen: "imagenes/1.png",
     etiqueta: "TCM"
   },
@@ -26,7 +26,7 @@ const PRODUCTS = [
     nombre: "Sticker Logo TCM con Letras",
     categoria: "Stickers",
     descripcion: "Sticker con el logo y las letras de The Collision Major.",
-    precio: 2000,
+    precio: 1300,
     imagen: "imagenes/tcmlogoletras.png",
     etiqueta: "TCM"
   },
@@ -35,7 +35,7 @@ const PRODUCTS = [
     nombre: "Sticker Apicultores Esports",
     categoria: "Stickers",
     descripcion: "Sticker con el logo de Apicultores Esports.",
-    precio: 2000,
+    precio: 1300,
     imagen: "imagenes/logoapi.png",
     etiqueta: "ESPORTS"
   },
@@ -56,7 +56,7 @@ const PRODUCTS = [
 
   {
     id: 25,
-    nombre: "Mousepad 1",
+    nombre: "Mousepad Relieve TCM 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
@@ -65,7 +65,7 @@ const PRODUCTS = [
   },
   {
     id: 26,
-    nombre: "Mousepad 2",
+    nombre: "Mousepad TCM 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
@@ -74,7 +74,7 @@ const PRODUCTS = [
   },
   {
     id: 27,
-    nombre: "Mousepad 3",
+    nombre: "Mousepad Ashe 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
@@ -83,7 +83,7 @@ const PRODUCTS = [
   },
   {
     id: 28,
-    nombre: "Mousepad 4",
+    nombre: "Mousepad LOL 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
@@ -92,7 +92,7 @@ const PRODUCTS = [
   },
   {
     id: 29,
-    nombre: "Mousepad 5",
+    nombre: "Mousepad Galaxia 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
