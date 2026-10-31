@@ -27,7 +27,7 @@ const PRODUCTS = [
     categoria: "Accesorios",
     descripcion: "Sticker con el logo y las letras de The Collision Major.",
     precio: 1300,
-    imagen: "imagenes/tcmlogoletras.png",
+    imagen: "imagenes/logotcmletras1.png",
     etiqueta: "TCM"
   },
   {
@@ -45,7 +45,7 @@ const PRODUCTS = [
     categoria: "Accesorios",
     descripcion: "Sticker con el logo de Zapadores Esports.",
     precio: 1300,
-    imagen: "imagenes/logozapa.png",
+    imagen: "imagenes/logoze.png",
     etiqueta: "ESPORTS"
   },
 
