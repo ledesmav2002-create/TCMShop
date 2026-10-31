@@ -60,7 +60,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mousepad1.jpg",
+    imagen: "imagenes/mouspad1.jpg",
     etiqueta: "MOUSEPAD"
   },
   {
@@ -69,7 +69,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mousepad2.jpg",
+    imagen: "imagenes/mouspad2.jpg",
     etiqueta: "MOUSEPAD"
   },
   {
