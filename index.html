@@ -5,15 +5,148 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#080d18">
-  <meta name="description" content="TCM Shop: periféricos gamer. Consultá disponibilidad y comprá por WhatsApp.">
+  <meta name="description" content="TCM Shop: periféricos gamer. Envíos gratis a todo el país desde $120.000 y Rosario y alrededores desde $80.000.">
   <title>TCM SHOP | Periféricos Gamer</title>
   <link rel="icon" type="image/png" href="imagenes/4.png">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* BARRA DE ENVÍOS */
+    .shipping-banner {
+      background: #080d18;
+      color: #fff;
+      border-top: 1px solid #26364c;
+      border-bottom: 1px solid #26364c;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px 35px;
+      text-align: center;
+    }
+
+    .shipping-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: .4px;
+    }
+
+    .shipping-item .shipping-icon {
+      font-size: 21px;
+    }
+
+    .shipping-item strong {
+      color: #65aaff;
+    }
+
+    .shipping-divider {
+      width: 1px;
+      height: 28px;
+      background: #34445c;
+    }
+
+    /* SECCIÓN DE ENVÍOS DEL FOOTER */
+    .footer-shipping {
+      width: 100%;
+      max-width: 850px;
+      margin: 0 auto 35px;
+      padding: 25px 20px;
+      background: #101a2b;
+      border: 1px solid #263e5e;
+      border-radius: 12px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .footer-shipping h3 {
+      color: #fff;
+      font-size: 22px;
+      margin: 0 0 8px;
+    }
+
+    .footer-shipping > p {
+      color: #aab8ca;
+      font-size: 13px;
+      margin-bottom: 22px;
+    }
+
+    .footer-shipping-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+
+    .footer-shipping-card {
+      background: #18263b;
+      padding: 20px 12px;
+      border-radius: 9px;
+      border: 1px solid #304968;
+    }
+
+    .footer-shipping-card .icon {
+      font-size: 27px;
+      margin-bottom: 8px;
+    }
+
+    .footer-shipping-card h4 {
+      color: #fff;
+      font-size: 14px;
+      margin: 0 0 8px;
+    }
+
+    .footer-shipping-card strong {
+      display: block;
+      color: #65aaff;
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+
+    .footer-shipping-card span {
+      color: #aab8ca;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      .shipping-banner {
+        gap: 10px;
+        padding: 12px 8px;
+      }
+
+      .shipping-item {
+        font-size: 11px;
+        gap: 6px;
+      }
+
+      .shipping-item .shipping-icon {
+        font-size: 17px;
+      }
+
+      .shipping-divider {
+        display: none;
+      }
+
+      .footer-shipping {
+        padding: 20px 12px;
+      }
+
+      .footer-shipping h3 {
+        font-size: 19px;
+      }
+
+      .footer-shipping-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
- 
 <header class="site-header">
   <a class="brand" href="#" aria-label="Shop inicio">
     <img class="brand-logo" src="imagenes/4.png" alt="Logo Shop">
@@ -42,133 +175,176 @@
   </a>
 </header>
 
+<!-- BARRA DE ENVÍOS GRATIS -->
+<div class="shipping-banner">
 
-  <main>
+  <div class="shipping-item">
+    <span class="shipping-icon">🚚</span>
+    <span>ENVÍOS A TODO EL PAÍS GRATIS DESDE <strong>$120.000</strong></span>
+  </div>
 
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span></span> TU SETUP, TU ESTILO</p>
+  <div class="shipping-divider"></div>
 
-        <h1>SUBÍ DE NIVEL.<br><span>EQUIPÁ TU SETUP.</span></h1>
+  <div class="shipping-item">
+    <span class="shipping-icon">📍</span>
+    <span>ROSARIO Y ALREDEDORES GRATIS DESDE <strong>$80.000</strong></span>
+  </div>
 
-        <p class="hero-description">
-          Periféricos gamer para jugar con todo. Encontrá tu próximo upgrade y consultanos directo por WhatsApp.
-        </p>
+</div>
 
-        <a class="primary-button" href="#productos">
-          VER PRODUCTOS <span>↓</span>
-        </a>
-      </div>
+<main>
 
-      <div class="hero-art" aria-hidden="true">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow"><span></span> TU SETUP, TU ESTILO</p>
 
-        <div class="hero-card">
-          <div class="hero-card-top">
-            <span>SHOP / GEAR</span>
-            <span>01—05</span>
-          </div>
+      <h1>SUBÍ DE NIVEL.<br><span>EQUIPÁ TU SETUP.</span></h1>
 
-          <div class="crosshair">
-            <img src="imagenes/1.png" alt="Logo The Collision Major">
-          </div>
-
-          <div class="hero-card-bottom">
-            PLAY DIFFERENT.<br>
-            <b>PLAY DIFFERENT.</b>
-          </div>
-        </div>
-
-        <div class="floating-tag">GAMING<br>GEAR</div>
-      </div>
-    </section>
-
-    <section class="catalog-section" id="productos">
-
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">CATÁLOGO TCM</p>
-          <h2>ENCONTRÁ TU <span>PRÓXIMO NIVEL</span></h2>
-        </div>
-
-        <p class="section-note">
-          Elegí un producto y consultá por WhatsApp.
-        </p>
-      </div>
-
-      <div class="toolbar">
-
-        <label class="search-box">
-          <span>⌕</span>
-          <input id="search" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
-        </label>
-
-        <div class="filters" id="filters" aria-label="Filtrar por categoría">
-          <button class="filter active" data-category="Todos">Todos</button>
-          <button class="filter" data-category="Mouse">Mouse</button>
-          <button class="filter" data-category="Teclados">Teclados</button>
-          <button class="filter" data-category="Auriculares">Auriculares</button>
-          <button class="filter" data-category="Combos">Combos</button>
-          <button class="filter" data-category="Accesorios">Accesorios</button>
-        </div>
-
-      </div>
-
-      <div class="product-grid" id="product-grid" aria-live="polite"></div>
-
-      <p class="empty-state" id="empty-state" hidden>
-        No encontramos productos con esa búsqueda.
+      <p class="hero-description">
+        Periféricos gamer para jugar con todo. Encontrá tu próximo upgrade y consultanos directo por WhatsApp.
       </p>
 
-      <p class="catalog-hint">
-        ¿Buscás algo que no aparece?
-        <a href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20estoy%20buscando%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo." target="_blank" rel="noopener">
-          Consultanos por WhatsApp.
-        </a>
-      </p>
+      <a class="primary-button" href="#productos">
+        VER PRODUCTOS <span>↓</span>
+      </a>
+    </div>
 
-    </section>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb-one"></div>
+      <div class="orb orb-two"></div>
 
-    <section class="contact-strip">
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span>SHOP / GEAR</span>
+          <span>01—05</span>
+        </div>
+
+        <div class="crosshair">
+          <img src="imagenes/1.png" alt="Logo The Collision Major">
+        </div>
+
+        <div class="hero-card-bottom">
+          PLAY DIFFERENT.<br>
+          <b>PLAY DIFFERENT.</b>
+        </div>
+      </div>
+
+      <div class="floating-tag">GAMING<br>GEAR</div>
+    </div>
+  </section>
+
+  <section class="catalog-section" id="productos">
+
+    <div class="section-heading">
       <div>
-        <p class="eyebrow">¿TENÉS DUDAS?</p>
-        <h2>HABLEMOS DE TU <span>PRÓXIMO UPGRADE.</span></h2>
+        <p class="eyebrow">CATÁLOGO TCM</p>
+        <h2>ENCONTRÁ TU <span>PRÓXIMO NIVEL</span></h2>
       </div>
 
-      <a class="primary-button" href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20quiero%20consultar%20por%20un%20producto." target="_blank" rel="noopener">
-        ESCRIBINOS <span>↗</span>
-      </a>
-    </section>
+      <p class="section-note">
+        Elegí un producto y consultá por WhatsApp.
+      </p>
+    </div>
 
-  </main>
+    <div class="toolbar">
 
-  <footer>
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="search" type="search" placeholder="Buscar productos..." aria-label="Buscar productos">
+      </label>
 
-    <a class="footer-brand" href="#">TCM SHOP</a>
-
-    <p>Periféricos gamer. La próxima partida empieza acá.</p>
-
-    <div class="footer-socials">
-
-      <span>SEGUINOS EN NUESTRAS REDES</span>
-
-      <a href="https://www.instagram.com/tcmshopgaming/?hl=es-la" target="_blank" rel="noopener">
-        INSTAGRAM TCM SHOP ↗
-      </a>
-
-      <a href="https://www.instagram.com/thecollisionmajor/?hl=es-la" target="_blank" rel="noopener">
-        INSTAGRAM THE COLLISION MAJOR ↗
-      </a>
+      <div class="filters" id="filters" aria-label="Filtrar por categoría">
+        <button class="filter active" data-category="Todos">Todos</button>
+        <button class="filter" data-category="Mouse">Mouse</button>
+        <button class="filter" data-category="Teclados">Teclados</button>
+        <button class="filter" data-category="Auriculares">Auriculares</button>
+        <button class="filter" data-category="Combos">Combos</button>
+        <button class="filter" data-category="Accesorios">Accesorios</button>
+      </div>
 
     </div>
 
-    <small>© <span id="year"></span> TCM Shop. Todos los derechos reservados.</small>
+    <div class="product-grid" id="product-grid" aria-live="polite"></div>
 
-  </footer>
+    <p class="empty-state" id="empty-state" hidden>
+      No encontramos productos con esa búsqueda.
+    </p>
 
-  <script src="products.js"></script>
-  <script src="script.js"></script>
+    <p class="catalog-hint">
+      ¿Buscás algo que no aparece?
+      <a href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20estoy%20buscando%20un%20producto%20que%20no%20veo%20en%20el%20cat%C3%A1logo." target="_blank" rel="noopener">
+        Consultanos por WhatsApp.
+      </a>
+    </p>
+
+  </section>
+
+  <section class="contact-strip">
+    <div>
+      <p class="eyebrow">¿TENÉS DUDAS?</p>
+      <h2>HABLEMOS DE TU <span>PRÓXIMO UPGRADE.</span></h2>
+    </div>
+
+    <a class="primary-button" href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20quiero%20consultar%20por%20un%20producto." target="_blank" rel="noopener">
+      ESCRIBINOS <span>↗</span>
+    </a>
+  </section>
+
+</main>
+
+<footer>
+
+  <!-- INFORMACIÓN DE ENVÍOS -->
+  <section class="footer-shipping">
+
+    <h3>🚀 TU SETUP LLEGA HASTA TU PUERTA</h3>
+
+    <p>En TCM Shop queremos que equipar tu setup sea cada vez más fácil.</p>
+
+    <div class="footer-shipping-grid">
+
+      <div class="footer-shipping-card">
+        <div class="icon">🚚</div>
+        <h4>ENVÍOS A TODO EL PAÍS</h4>
+        <strong>$120.000</strong>
+        <span>Compra mínima para envío gratis</span>
+      </div>
+
+      <div class="footer-shipping-card">
+        <div class="icon">📍</div>
+        <h4>ROSARIO Y ALREDEDORES</h4>
+        <strong>$80.000</strong>
+        <span>Compra mínima para envío gratis</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <a class="footer-brand" href="#">TCM SHOP</a>
+
+  <p>Periféricos gamer. La próxima partida empieza acá.</p>
+
+  <div class="footer-socials">
+
+    <span>SEGUINOS EN NUESTRAS REDES</span>
+
+    <a href="https://www.instagram.com/tcmshopgaming/?hl=es-la" target="_blank" rel="noopener">
+      INSTAGRAM TCM SHOP ↗
+    </a>
+
+    <a href="https://www.instagram.com/thecollisionmajor/?hl=es-la" target="_blank" rel="noopener">
+      INSTAGRAM THE COLLISION MAJOR ↗
+    </a>
+
+  </div>
+
+  <small>© <span id="year"></span> TCM Shop. Todos los derechos reservados.</small>
+
+</footer>
+
+<script src="products.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
