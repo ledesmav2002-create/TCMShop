@@ -183,7 +183,7 @@ const PRODUCTS = [
     categoria: "Teclados",
     descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
     precio: 52300,
-    imagen: "imagenes/volcanonegro (1).jpg",
+    imagen: "imagenes/volcanon.jpg",
     etiqueta: "LCD"
   },
 
