@@ -122,8 +122,8 @@ const PRODUCTS = [
     precio: 56900,
     imagen: "imagenes/kumarablanco.jpg",
     etiqueta: "RAINBOW"
-  },
-  {
+  // },
+  // {
    // id: 9,
    // nombre: "Teclado Redragon Kumara 2 K552 Rainbow Negro",
    // categoria: "Teclados",
@@ -131,8 +131,8 @@ const PRODUCTS = [
    // precio: 56900,
    // imagen: "imagenes/kumara negro.jpg",
    // etiqueta: "RAINBOW"
-  },
-  {
+  // },
+  // {
    // id: 10,
    // nombre: "Teclado Redragon Kumara K552 RBN Magnético Negro",
    // categoria: "Teclados",
@@ -168,7 +168,7 @@ const PRODUCTS = [
     imagen: "imagenes/fizzgris.jpg",
     etiqueta: "WIRELESS"
   },
-  {
+  //{
   //  id: 20,
   // nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
   //  categoria: "Teclados",
@@ -176,7 +176,7 @@ const PRODUCTS = [
   //  precio: 52300,
   //  imagen: "imagenes/volcanon.jpg",
   //  etiqueta: "LCD"
-  },
+ // },
 
 
   // ==========================================
