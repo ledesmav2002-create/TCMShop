@@ -59,7 +59,7 @@ const PRODUCTS = [
     nombre: "Mousepad Relieve TCM 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
-    precio: 21900,
+    precio: 22900,
     imagen: "imagenes/mouspad2.jpeg",
     etiqueta: "MOUSEPAD"
   },
@@ -68,7 +68,7 @@ const PRODUCTS = [
     nombre: "Mousepad TCM 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
-    precio: 21900,
+    precio: 22900,
     imagen: "imagenes/mouspad1.jpeg",
     etiqueta: "MOUSEPAD"
   },
@@ -77,7 +77,7 @@ const PRODUCTS = [
     nombre: "Mousepad Ashe 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
-    precio: 21900,
+    precio: 22900,
     imagen: "imagenes/mouspad3.jpeg",
     etiqueta: "MOUSEPAD"
   },
@@ -86,7 +86,7 @@ const PRODUCTS = [
     nombre: "Mousepad Galaxia 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
-    precio: 21900,
+    precio: 22900,
     imagen: "imagenes/mouspad4.jpeg",
     etiqueta: "MOUSEPAD"
   },
