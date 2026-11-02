@@ -3,7 +3,7 @@
   CATÁLOGO TCM SHOP
   Orden:
   Stickers → Mousepads → Chomba TCM → Teclados
-  → Combos → Mouses → Auriculares
+  → Combos → Mouses → Auriculares → Accesorios
 */
 
 const PRODUCTS = [
@@ -49,7 +49,6 @@ const PRODUCTS = [
     etiqueta: "ESPORTS"
   },
 
-
   // ==========================================
   // MOUSEPADS
   // ==========================================
@@ -58,7 +57,7 @@ const PRODUCTS = [
     id: 25,
     nombre: "Mousepad Relieve TCM 60x30",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer.",
+    descripcion: "Mousepad gamer de 60 x 30 cm.",
     precio: 22900,
     imagen: "imagenes/mouspad2.jpeg",
     etiqueta: "MOUSEPAD"
@@ -67,7 +66,7 @@ const PRODUCTS = [
     id: 26,
     nombre: "Mousepad TCM 60x30",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer.",
+    descripcion: "Mousepad gamer de 60 x 30 cm.",
     precio: 22900,
     imagen: "imagenes/mouspad1.jpeg",
     etiqueta: "MOUSEPAD"
@@ -76,7 +75,7 @@ const PRODUCTS = [
     id: 27,
     nombre: "Mousepad Ashe 60x30",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer.",
+    descripcion: "Mousepad gamer de 60 x 30 cm.",
     precio: 22900,
     imagen: "imagenes/mouspad3.jpeg",
     etiqueta: "MOUSEPAD"
@@ -85,30 +84,17 @@ const PRODUCTS = [
     id: 28,
     nombre: "Mousepad Galaxia 60x30",
     categoria: "Mousepads",
-    descripcion: "Mousepad gamer.",
+    descripcion: "Mousepad gamer de 60 x 30 cm.",
     precio: 22900,
     imagen: "imagenes/mouspad4.jpeg",
     etiqueta: "MOUSEPAD"
   },
 
-
   // ==========================================
   // PRÓXIMO LANZAMIENTO: CHOMBA TCM
   // ==========================================
 
-  // Espacio reservado para agregar la chomba TCM.
-  // Cuando tengas la foto y el precio, agregaremos:
-  //
-  // {
-  //   id: 30,
-  //   nombre: "Chomba The Collision Major",
-  //   categoria: "Indumentaria",
-  //   descripcion: "Indumentaria oficial de The Collision Major.",
-  //   precio: 0,
-  //   imagen: "imagenes/chomba-tcm.jpg",
-  //   etiqueta: "TCM"
-  // },
-
+  // Espacio reservado para la chomba TCM.
 
   // ==========================================
   // TECLADOS
@@ -122,24 +108,6 @@ const PRODUCTS = [
     precio: 56900,
     imagen: "imagenes/kumarablanco.jpg",
     etiqueta: "RAINBOW"
-  // },
-  // {
-   // id: 9,
-   // nombre: "Teclado Redragon Kumara 2 K552 Rainbow Negro",
-   // categoria: "Teclados",
-   // descripcion: "Teclado Redragon con iluminación Rainbow.",
-   // precio: 56900,
-   // imagen: "imagenes/kumara negro.jpg",
-   // etiqueta: "RAINBOW"
-  // },
-  // {
-   // id: 10,
-   // nombre: "Teclado Redragon Kumara K552 RBN Magnético Negro",
-   // categoria: "Teclados",
-   // descripcion: "Teclado gamer Redragon magnético.",
-   // precio: 81000,
-   // imagen: "imagenes/kumaramag.png",
-   // etiqueta: "GAMING"
   },
   {
     id: 11,
@@ -169,24 +137,14 @@ const PRODUCTS = [
     etiqueta: "WIRELESS"
   },
   {
-    id: 19,
-    nombre: "Teclado  Redragon Fizz k617 Magnético Negro",
+    id: 20,
+    nombre: "Teclado Redragon Fizz K617 Magnético Negro",
     categoria: "Teclados",
-    descripcion: "https://redragon.es/products/best-seller/fizz-magnetic/",
+    descripcion: "Teclado Redragon Fizz Magnetic.",
     precio: 69900,
     imagen: "imagenes/fizzgris.jpg",
-    etiqueta: "WIRELESS"
+    etiqueta: "MAGNÉTICO"
   },
-  //{
-  //  id: 20,
-  // nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
-  //  categoria: "Teclados",
-  //  descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
-  //  precio: 52300,
-  //  imagen: "imagenes/volcanon.jpg",
-  //  etiqueta: "LCD"
- // },
-
 
   // ==========================================
   // COMBOS
@@ -198,7 +156,7 @@ const PRODUCTS = [
     categoria: "Combos",
     descripcion: "Combo gamer Redragon para equipar tu setup.",
     precio: 83900,
-    imagen: "/imagenes/combo146.jpg",
+    imagen: "imagenes/combo146.jpg",
     etiqueta: "COMBO"
   },
   {
@@ -207,7 +165,7 @@ const PRODUCTS = [
     categoria: "Combos",
     descripcion: "Combo gamer Redragon para equipar tu setup.",
     precio: 83900,
-    imagen: "/imagenes/combo146.jpg",
+    imagen: "imagenes/combo146.jpg",
     etiqueta: "COMBO"
   },
 
@@ -223,33 +181,6 @@ const PRODUCTS = [
     precio: 59900,
     imagen: "imagenes/mouseking1kb.jpg",
     etiqueta: "WIRELESS"
- // },
- // {
-   // id: 3,
-   // nombre: "Mouse Redragon Cobra M711 Blanco",
-   // categoria: "Mouse",
-   // descripcion: "Mouse gamer Redragon en color blanco.",
-   // precio: 34900,
-   // imagen: "imagenes/mousecobrablanco.jpg",
-   // etiqueta: "GAMING"
- // },
- // {
-   // id: 12,
-   // nombre: "Mouse Redragon K1ng Negro",
-   // categoria: "Mouse",
-   // descripcion: "Mouse gamer Redragon en color negro.",
-   // precio: 27900,
-   // imagen: "imagenes/kingcablenegro.jpg",
-   // etiqueta: "GAMING"
- // },
- // {
-  //  id: 13,
-  //  nombre: "Mouse Redragon K1ng Blanco",
-  //  categoria: "Mouse",
-  //  descripcion: "Mouse gamer Redragon en color blanco.",
-  //  precio: 27900,
-   // imagen: "imagenes/kinkcableblanco.jpg",
-   // etiqueta: "GAMING"
   },
   {
     id: 14,
@@ -257,38 +188,37 @@ const PRODUCTS = [
     categoria: "Mouse",
     descripcion: "Mouse inalámbrico Redragon en color blanco.",
     precio: 61900,
-    imagen: "/imagenes/mouseking1k.jpg",
+    imagen: "imagenes/mouseking1k.jpg",
     etiqueta: "WIRELESS"
- // },
- // {
-  //  id: 15,
-   // nombre: "Mouse Redragon ST4R Pro Inalámbrico Celeste",
-   // categoria: "Mouse",
-   // descripcion: "Mouse inalámbrico Redragon en color celeste.",
-  //  precio: 56900,
-  //  imagen: "imagenes/starproceleste.jpg",
-  //  etiqueta: "WIRELESS"
   },
-
+  {
+    id: 32,
+    nombre: "Mouse Inalámbrico Logitech G305 Negro",
+    categoria: "Mouse",
+    descripcion: "Mouse inalámbrico Logitech G305 en color negro.",
+    precio: 0,
+    imagen: "imagenes/logitech-g305-negro.jpg",
+    etiqueta: "WIRELESS"
+  },
+  {
+    id: 33,
+    nombre: "Mouse Inalámbrico Logitech G305 Blanco",
+    categoria: "Mouse",
+    descripcion: "Mouse inalámbrico Logitech G305 en color blanco.",
+    precio: 0,
+    imagen: "imagenes/logitech-g305-blanco.jpg",
+    etiqueta: "WIRELESS"
+  },
 
   // ==========================================
   // AURICULARES
   // ==========================================
 
   {
-  //  id: 4,
-  //  nombre: "Auricular Redragon Cronus Negro",
-  //  categoria: "Auriculares",
-  //  descripcion: "Auriculares gamer Redragon.",
-  //  precio: 39900,
-  //  imagen: "imagenes/cronusnegro.jpg",
-  //  etiqueta: "AUDIO"
- // },
- // {
     id: 5,
     nombre: "Auricular Redragon Zeus X H510 RGB Negro",
     categoria: "Auriculares",
-    descripcion: "https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/?color=white&size=ac",
+    descripcion: "Auricular gamer Redragon Zeus X con iluminación RGB.",
     precio: 106500,
     imagen: "imagenes/zeusnegro.jpg",
     etiqueta: "RGB"
@@ -297,7 +227,7 @@ const PRODUCTS = [
     id: 6,
     nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Azul",
     categoria: "Auriculares",
-    descripcion: "https://redragon.es/products/best-seller/ire-pro-h848/",
+    descripcion: "Auricular inalámbrico Redragon IRE Pro.",
     precio: 80700,
     imagen: "imagenes/ireproazul.jpg",
     etiqueta: "WIRELESS"
@@ -306,36 +236,33 @@ const PRODUCTS = [
     id: 7,
     nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Negro",
     categoria: "Auriculares",
-    descripcion: "https://redragon.es/products/best-seller/ire-pro-h848/?color=negro&size=",
+    descripcion: "Auricular inalámbrico Redragon IRE Pro.",
     precio: 80700,
     imagen: "imagenes/irepronegro.jpg",
     etiqueta: "WIRELESS"
- // },
- // {
-  //  id: 16,
-  //  nombre: "Auricular Redragon Cronus Blanco",
-  //  categoria: "Auriculares",
-  //  descripcion: "Auriculares gamer Redragon.",
-  //  precio: 39900,
-  //  imagen: "imagenes/cronusblanco.jpg",
-  //  etiqueta: "AUDIO"
   },
   {
     id: 17,
     nombre: "Auricular Redragon Hylas Negro RGB",
     categoria: "Auriculares",
-    descripcion: "https://redragon.es/products/best-seller/hylas-h260/",
+    descripcion: "Auricular gamer Redragon con iluminación RGB.",
     precio: 44900,
     imagen: "imagenes/hylasnegro.jpg",
     etiqueta: "RGB"
   },
+
+  // ==========================================
+  // ACCESORIOS
+  // ==========================================
+
   {
-    id: 5,
-    nombre: "Auricular Redragon Zeus X H510 RGB Blanco",
-    categoria: "Auriculares",
-    descripcion: "https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/?color=white&size=ac",
-    precio: 106500,
-    imagen: "imagenes/zeusnegro.jpg",
-    etiqueta: "RGB"
+    id: 34,
+    nombre: "Cámara Web Redragon Hitman GW800-1",
+    categoria: "Accesorios",
+    descripcion: "Cámara web Redragon Hitman para streaming, videollamadas y contenido.",
+    precio: 0,
+    imagen: "imagenes/redragon-hitman-gw800-1.jpg",
+    etiqueta: "WEBCAM"
+  }
 
 ];
