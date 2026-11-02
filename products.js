@@ -224,6 +224,15 @@ const PRODUCTS = [
     etiqueta: "RGB"
   },
   {
+    id: 35,
+    nombre: "Auricular Redragon Zeus X H510 RGB Blanco",
+    categoria: "Auriculares",
+    descripcion: "Auricular gamer Redragon Zeus X con iluminación RGB.",
+    precio: 106500,
+    imagen: "imagenes/zeusnegro.jpg",
+    etiqueta: "RGB"
+  },
+  {
     id: 6,
     nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Azul",
     categoria: "Auriculares",
