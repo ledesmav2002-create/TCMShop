@@ -83,20 +83,11 @@ const PRODUCTS = [
   },
   {
     id: 28,
-    nombre: "Mousepad LOL 60x30",
-    categoria: "Mousepads",
-    descripcion: "Mousepad gamer.",
-    precio: 21900,
-    imagen: "imagenes/mouspad4.jpeg",
-    etiqueta: "MOUSEPAD"
-  },
-  {
-    id: 29,
     nombre: "Mousepad Galaxia 60x30",
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mousepad5.jpg",
+    imagen: "imagenes/mouspad4.jpeg",
     etiqueta: "MOUSEPAD"
   },
 
