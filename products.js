@@ -60,7 +60,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mouspad1.jpeg",
+    imagen: "imagenes/mouspad2.jpeg",
     etiqueta: "MOUSEPAD"
   },
   {
@@ -69,7 +69,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mouspad2.png",
+    imagen: "imagenes/mouspad1.jpeg",
     etiqueta: "MOUSEPAD"
   },
   {
@@ -78,7 +78,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mousepad3.jpg",
+    imagen: "imagenes/mouspad3.jpeg",
     etiqueta: "MOUSEPAD"
   },
   {
@@ -87,7 +87,7 @@ const PRODUCTS = [
     categoria: "Mousepads",
     descripcion: "Mousepad gamer.",
     precio: 21900,
-    imagen: "imagenes/mousepad4.jpg",
+    imagen: "imagenes/mouspad4.jpeg",
     etiqueta: "MOUSEPAD"
   },
   {
