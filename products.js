@@ -223,8 +223,8 @@ const PRODUCTS = [
     precio: 59900,
     imagen: "imagenes/mouseking1kb.jpg",
     etiqueta: "WIRELESS"
-  },
-  {
+ // },
+ // {
    // id: 3,
    // nombre: "Mouse Redragon Cobra M711 Blanco",
    // categoria: "Mouse",
