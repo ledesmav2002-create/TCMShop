@@ -124,22 +124,22 @@ const PRODUCTS = [
     etiqueta: "RAINBOW"
   },
   {
-    id: 9,
-    nombre: "Teclado Redragon Kumara 2 K552 Rainbow Negro",
-    categoria: "Teclados",
-    descripcion: "Teclado Redragon con iluminación Rainbow.",
-    precio: 56900,
-    imagen: "imagenes/kumara negro.jpg",
-    etiqueta: "RAINBOW"
+   // id: 9,
+   // nombre: "Teclado Redragon Kumara 2 K552 Rainbow Negro",
+   // categoria: "Teclados",
+   // descripcion: "Teclado Redragon con iluminación Rainbow.",
+   // precio: 56900,
+   // imagen: "imagenes/kumara negro.jpg",
+   // etiqueta: "RAINBOW"
   },
   {
-    id: 10,
-    nombre: "Teclado Redragon Kumara K552 RBN Magnético Negro",
-    categoria: "Teclados",
-    descripcion: "Teclado gamer Redragon magnético.",
-    precio: 81000,
-    imagen: "imagenes/kumaramag.png",
-    etiqueta: "GAMING"
+   // id: 10,
+   // nombre: "Teclado Redragon Kumara K552 RBN Magnético Negro",
+   // categoria: "Teclados",
+   // descripcion: "Teclado gamer Redragon magnético.",
+   // precio: 81000,
+   // imagen: "imagenes/kumaramag.png",
+   // etiqueta: "GAMING"
   },
   {
     id: 11,
@@ -161,7 +161,7 @@ const PRODUCTS = [
   },
   {
     id: 19,
-    nombre: "Teclado Redragon Fizz Pro 60% Inalámbrico RGB Blanco/Gris ESP",
+    nombre: "Teclado Redragon Fizz Pro 60% Inalámbrico RGB Blanco/Gris",
     categoria: "Teclados",
     descripcion: "Teclado compacto inalámbrico RGB blanco y gris, distribución española.",
     precio: 64900,
@@ -169,13 +169,13 @@ const PRODUCTS = [
     etiqueta: "WIRELESS"
   },
   {
-    id: 20,
-    nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
-    categoria: "Teclados",
-    descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
-    precio: 52300,
-    imagen: "imagenes/volcanon.jpg",
-    etiqueta: "LCD"
+  //  id: 20,
+  // nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
+  //  categoria: "Teclados",
+  //  descripcion: "Teclado Redragon inalámbrico con pantalla LCD.",
+  //  precio: 52300,
+  //  imagen: "imagenes/volcanon.jpg",
+  //  etiqueta: "LCD"
   },
 
 
