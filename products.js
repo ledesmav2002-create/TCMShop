@@ -225,31 +225,31 @@ const PRODUCTS = [
     etiqueta: "WIRELESS"
   },
   {
-    id: 3,
-    nombre: "Mouse Redragon Cobra M711 Blanco",
-    categoria: "Mouse",
-    descripcion: "Mouse gamer Redragon en color blanco.",
-    precio: 34900,
-    imagen: "imagenes/mousecobrablanco.jpg",
-    etiqueta: "GAMING"
-  },
-  {
-    id: 12,
-    nombre: "Mouse Redragon K1ng Negro",
-    categoria: "Mouse",
-    descripcion: "Mouse gamer Redragon en color negro.",
-    precio: 27900,
-    imagen: "imagenes/kingcablenegro.jpg",
-    etiqueta: "GAMING"
-  },
-  {
-    id: 13,
-    nombre: "Mouse Redragon K1ng Blanco",
-    categoria: "Mouse",
-    descripcion: "Mouse gamer Redragon en color blanco.",
-    precio: 27900,
-    imagen: "imagenes/kinkcableblanco.jpg",
-    etiqueta: "GAMING"
+   // id: 3,
+   // nombre: "Mouse Redragon Cobra M711 Blanco",
+   // categoria: "Mouse",
+   // descripcion: "Mouse gamer Redragon en color blanco.",
+   // precio: 34900,
+   // imagen: "imagenes/mousecobrablanco.jpg",
+   // etiqueta: "GAMING"
+ // },
+ // {
+   // id: 12,
+   // nombre: "Mouse Redragon K1ng Negro",
+   // categoria: "Mouse",
+   // descripcion: "Mouse gamer Redragon en color negro.",
+   // precio: 27900,
+   // imagen: "imagenes/kingcablenegro.jpg",
+   // etiqueta: "GAMING"
+ // },
+ // {
+  //  id: 13,
+  //  nombre: "Mouse Redragon K1ng Blanco",
+  //  categoria: "Mouse",
+  //  descripcion: "Mouse gamer Redragon en color blanco.",
+  //  precio: 27900,
+   // imagen: "imagenes/kinkcableblanco.jpg",
+   // etiqueta: "GAMING"
   },
   {
     id: 14,
@@ -259,15 +259,15 @@ const PRODUCTS = [
     precio: 61900,
     imagen: "/imagenes/mouseking1k.jpg",
     etiqueta: "WIRELESS"
-  },
-  {
-    id: 15,
-    nombre: "Mouse Redragon ST4R Pro Inalámbrico Celeste",
-    categoria: "Mouse",
-    descripcion: "Mouse inalámbrico Redragon en color celeste.",
-    precio: 56900,
-    imagen: "imagenes/starproceleste.jpg",
-    etiqueta: "WIRELESS"
+ // },
+ // {
+  //  id: 15,
+   // nombre: "Mouse Redragon ST4R Pro Inalámbrico Celeste",
+   // categoria: "Mouse",
+   // descripcion: "Mouse inalámbrico Redragon en color celeste.",
+  //  precio: 56900,
+  //  imagen: "imagenes/starproceleste.jpg",
+  //  etiqueta: "WIRELESS"
   },
 
 
@@ -276,19 +276,19 @@ const PRODUCTS = [
   // ==========================================
 
   {
-    id: 4,
-    nombre: "Auricular Redragon Cronus Negro",
-    categoria: "Auriculares",
-    descripcion: "Auriculares gamer Redragon.",
-    precio: 39900,
-    imagen: "imagenes/cronusnegro.jpg",
-    etiqueta: "AUDIO"
-  },
-  {
+  //  id: 4,
+  //  nombre: "Auricular Redragon Cronus Negro",
+  //  categoria: "Auriculares",
+  //  descripcion: "Auriculares gamer Redragon.",
+  //  precio: 39900,
+  //  imagen: "imagenes/cronusnegro.jpg",
+  //  etiqueta: "AUDIO"
+ // },
+ // {
     id: 5,
     nombre: "Auricular Redragon Zeus X H510 RGB Negro",
     categoria: "Auriculares",
-    descripcion: "Auriculares gamer con iluminación RGB.",
+    descripcion: "https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/?color=white&size=ac",
     precio: 106500,
     imagen: "imagenes/zeusnegro.jpg",
     etiqueta: "RGB"
@@ -297,7 +297,7 @@ const PRODUCTS = [
     id: 6,
     nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Azul",
     categoria: "Auriculares",
-    descripcion: "Auriculares inalámbricos Redragon en color azul.",
+    descripcion: "https://redragon.es/products/best-seller/ire-pro-h848/",
     precio: 80700,
     imagen: "imagenes/ireproazul.jpg",
     etiqueta: "WIRELESS"
@@ -306,28 +306,36 @@ const PRODUCTS = [
     id: 7,
     nombre: "Auricular Redragon IRE Pro H848 Inalámbrico Negro",
     categoria: "Auriculares",
-    descripcion: "Auriculares inalámbricos Redragon en color negro.",
+    descripcion: "https://redragon.es/products/best-seller/ire-pro-h848/?color=negro&size=",
     precio: 80700,
     imagen: "imagenes/irepronegro.jpg",
     etiqueta: "WIRELESS"
-  },
-  {
-    id: 16,
-    nombre: "Auricular Redragon Cronus Blanco",
-    categoria: "Auriculares",
-    descripcion: "Auriculares gamer Redragon.",
-    precio: 39900,
-    imagen: "imagenes/cronusblanco.jpg",
-    etiqueta: "AUDIO"
+ // },
+ // {
+  //  id: 16,
+  //  nombre: "Auricular Redragon Cronus Blanco",
+  //  categoria: "Auriculares",
+  //  descripcion: "Auriculares gamer Redragon.",
+  //  precio: 39900,
+  //  imagen: "imagenes/cronusblanco.jpg",
+  //  etiqueta: "AUDIO"
   },
   {
     id: 17,
     nombre: "Auricular Redragon Hylas Negro RGB",
     categoria: "Auriculares",
-    descripcion: "Auriculares gamer con iluminación RGB.",
+    descripcion: "https://redragon.es/products/best-seller/hylas-h260/",
     precio: 44900,
     imagen: "imagenes/hylasnegro.jpg",
     etiqueta: "RGB"
-  }
+  },
+  {
+    id: 5,
+    nombre: "Auricular Redragon Zeus X H510 RGB Blanco",
+    categoria: "Auriculares",
+    descripcion: "https://redragon.es/products/best-seller/audifonos-gamer-zeus-x-redragon/?color=white&size=ac",
+    precio: 106500,
+    imagen: "imagenes/zeusnegro.jpg",
+    etiqueta: "RGB"
 
 ];
