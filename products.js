@@ -192,6 +192,7 @@ const PRODUCTS = [
     imagen: "/imagenes/combo146.jpg",
     etiqueta: "COMBO"
   },
+  {
     id: 31,
     nombre: "Combo Teclado y Mouse Redragon S136",
     categoria: "Combos",
