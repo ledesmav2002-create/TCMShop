@@ -168,6 +168,15 @@ const PRODUCTS = [
     imagen: "imagenes/fizzgris.jpg",
     etiqueta: "WIRELESS"
   },
+  {
+    id: 19,
+    nombre: "Teclado  Redragon Fizz k617 Magnético Negro",
+    categoria: "Teclados",
+    descripcion: "https://redragon.es/products/best-seller/fizz-magnetic/",
+    precio: 69900,
+    imagen: "imagenes/fizzgris.jpg",
+    etiqueta: "WIRELESS"
+  },
   //{
   //  id: 20,
   // nombre: "Teclado Redragon Volcano Pro Inalámbrico LCD",
