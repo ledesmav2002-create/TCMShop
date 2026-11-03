@@ -43,7 +43,7 @@ const PRODUCTS = [
   { id: 17, nombre: "Auricular Redragon Hylas Negro RGB", categoria: "Auriculares", marca: "Redragon", descripcion: "Auricular gamer Redragon con iluminación RGB.", precio: 44900, imagen: "imagenes/hylasnegro.jpg", imagenes: ["imagenes/hylasn2.png", "imagenes/hylasn3.png"], etiqueta: "RGB", disponibilidad: "stock" },
 
   // ACCESORIOS (UNA SOLA IMAGEN)
-  { id: 34, nombre: "Cámara Web Redragon Hitman GW800-1", categoria: "Accesorios", marca: "Redragon", descripcion: "Cámara web Redragon Hitman para streaming, videollamadas y contenido.", precio: 0, imagen: "imagenes/redragon-hitman-gw800-1.jpg", etiqueta: "WEBCAM", disponibilidad: "stock" },
+  { id: 34, nombre: "Cámara Web Redragon Hitman GW800-1", categoria: "Webcam", marca: "Redragon", descripcion: "Cámara web Redragon Hitman para streaming, videollamadas y contenido.", precio: 73900, imagen: "imagenes/gw8001.png", etiqueta: "WEBCAM", disponibilidad: "stock" },
 
   // CATÁLOGO A PEDIDO - ELIT
   { id: 101, nombre: "Teclado Redragon Ucal K673 Magnético", categoria: "Teclados", marca: "Redragon", descripcion: "Producto a pedido. Consultanos precio, disponibilidad y plazo de entrega.", precio: 0, imagen: "imagenes/ucalk6731.png", imagenes: ["imagenes/ucalk6732.png", "imagenes/ucalk6733.png"], etiqueta: "A PEDIDO", disponibilidad: "pedido", proveedor: "Elit", urlProveedor: "https://www.elit.com.ar/producto/20663-teclado-redragon-ucal-k673-magnetico" },
