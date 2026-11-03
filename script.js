@@ -82,7 +82,6 @@ function whatsappLink(product) {
 
 function renderFilterControls() {
 
-  // Orden de las categorías
   const categoryOrder = [
     "Stickers",
     "Mousepads",
@@ -117,7 +116,6 @@ function renderFilterControls() {
     </button>
   `).join("");
 
-  // Crear controles adicionales
   let extra = document.getElementById("catalog-extra-filters");
 
   if (!extra) {
@@ -282,6 +280,13 @@ function productCard(product) {
           ${price}
         </div>
 
+        <button
+          class="cart-add-button"
+          type="button"
+          data-cart-add="${product.id}">
+          🛒 AGREGAR AL CARRITO
+        </button>
+
         <a
           class="buy-button"
           href="${whatsappLink(product)}"
@@ -343,8 +348,6 @@ function renderProducts() {
     );
   });
 
-  // Ordenamiento.
-  // Los productos sin precio quedan al final.
   if (sortOrder === "asc") {
     filtered.sort((a, b) => {
       const priceA = Number(a.precio) > 0 ? Number(a.precio) : Infinity;
@@ -582,6 +585,397 @@ grid.addEventListener("click", event => {
   openGallery(trigger.dataset.galleryProduct);
 
 });
+
+// ==========================================
+// CARRITO DE COMPRAS TCM SHOP
+// ==========================================
+
+const CART_STORAGE_KEY = "tcmshop_cart_v1";
+
+let cart = [];
+
+// Recuperar carrito guardado en el navegador
+
+try {
+  const savedCart = JSON.parse(
+    localStorage.getItem(CART_STORAGE_KEY) || "[]"
+  );
+
+  if (Array.isArray(savedCart)) {
+    cart = savedCart
+      .filter(item =>
+        PRODUCTS.some(product => product.id === Number(item.id)) &&
+        Number.isInteger(Number(item.quantity)) &&
+        Number(item.quantity) > 0
+      )
+      .map(item => ({
+        id: Number(item.id),
+        quantity: Number(item.quantity)
+      }));
+  }
+} catch (error) {
+  cart = [];
+}
+
+// Elementos del carrito
+
+const cartOverlay = document.getElementById("cart-overlay");
+const cartItemsContainer = document.getElementById("cart-items");
+const cartEmpty = document.getElementById("cart-empty");
+const cartCount = document.getElementById("cart-count");
+const cartSubtotal = document.getElementById("cart-subtotal");
+const cartPendingNote = document.getElementById("cart-pending-note");
+const checkoutButton = document.getElementById("checkout-cart");
+
+// Guardar carrito
+
+function saveCart() {
+  try {
+    localStorage.setItem(CART_STORAGE_KEY, JSON.stringify(cart));
+  } catch (error) {
+    console.warn("No se pudo guardar el carrito.", error);
+  }
+}
+
+// Buscar producto
+
+function getCartProduct(id) {
+  return PRODUCTS.find(product => product.id === Number(id));
+}
+
+// Cantidad total de unidades
+
+function getCartQuantity() {
+  return cart.reduce((total, item) => total + item.quantity, 0);
+}
+
+// Calcular subtotal de productos con precio confirmado
+
+function getCartSubtotal() {
+  return cart.reduce((total, item) => {
+    const product = getCartProduct(item.id);
+
+    if (!product || Number(product.precio) <= 0) {
+      return total;
+    }
+
+    return total + Number(product.precio) * item.quantity;
+  }, 0);
+}
+
+// Dibujar carrito
+
+function renderCart() {
+
+  const totalQuantity = getCartQuantity();
+  const subtotal = getCartSubtotal();
+
+  cartCount.textContent = totalQuantity;
+  cartSubtotal.textContent = money.format(subtotal);
+
+  cartEmpty.hidden = cart.length > 0;
+  cartItemsContainer.hidden = cart.length === 0;
+
+  const hasPendingProducts = cart.some(item => {
+    const product = getCartProduct(item.id);
+    return product && Number(product.precio) <= 0;
+  });
+
+  cartPendingNote.hidden = !hasPendingProducts;
+
+  checkoutButton.disabled = cart.length === 0;
+
+  cartItemsContainer.innerHTML = cart.map(item => {
+
+    const product = getCartProduct(item.id);
+
+    if (!product) return "";
+
+    const price = Number(product.precio);
+    const isPending = price <= 0;
+
+    return `
+      <article class="cart-item">
+
+        <img
+          class="cart-item-image"
+          src="${escapeHtml(product.imagen || "")}"
+          alt="${escapeHtml(product.nombre)}"
+          onerror="this.style.visibility='hidden'">
+
+        <div class="cart-item-info">
+
+          <h3>${escapeHtml(product.nombre)}</h3>
+
+          ${
+            isPending
+              ? `<span class="cart-item-pending">PRECIO A CONFIRMAR</span>`
+              : `<div class="cart-item-price">${money.format(price * item.quantity)}</div>`
+          }
+
+          <div class="cart-item-controls">
+
+            <button
+              class="cart-quantity-button"
+              type="button"
+              data-cart-action="decrease"
+              data-id="${product.id}">
+              −
+            </button>
+
+            <span class="cart-quantity">${item.quantity}</span>
+
+            <button
+              class="cart-quantity-button"
+              type="button"
+              data-cart-action="increase"
+              data-id="${product.id}">
+              +
+            </button>
+
+            <button
+              class="cart-remove"
+              type="button"
+              data-cart-action="remove"
+              data-id="${product.id}">
+              Eliminar
+            </button>
+
+          </div>
+
+        </div>
+
+      </article>
+    `;
+
+  }).join("");
+}
+
+// Agregar producto
+
+function addToCart(id) {
+
+  const product = getCartProduct(id);
+
+  if (!product) return;
+
+  const existing = cart.find(item => item.id === Number(id));
+
+  if (existing) {
+    existing.quantity++;
+  } else {
+    cart.push({
+      id: Number(id),
+      quantity: 1
+    });
+  }
+
+  saveCart();
+  renderCart();
+
+  const button = grid.querySelector(`[data-cart-add="${id}"]`);
+
+  if (button) {
+
+    const originalText = button.innerHTML;
+
+    button.innerHTML = "✓ AGREGADO AL CARRITO";
+    button.classList.add("added");
+
+    setTimeout(() => {
+
+      if (button.isConnected) {
+        button.innerHTML = originalText;
+        button.classList.remove("added");
+      }
+
+    }, 1200);
+  }
+}
+
+// Modificar cantidades o eliminar productos
+
+function updateCart(id, action) {
+
+  const item = cart.find(item => item.id === Number(id));
+
+  if (!item) return;
+
+  if (action === "increase") {
+    item.quantity++;
+  }
+
+  if (action === "decrease") {
+
+    item.quantity--;
+
+    if (item.quantity <= 0) {
+      cart = cart.filter(item => item.id !== Number(id));
+    }
+  }
+
+  if (action === "remove") {
+    cart = cart.filter(item => item.id !== Number(id));
+  }
+
+  saveCart();
+  renderCart();
+}
+
+// Abrir carrito
+
+function openCart() {
+
+  cartOverlay.classList.add("open");
+  cartOverlay.setAttribute("aria-hidden", "false");
+
+  document.body.style.overflow = "hidden";
+}
+
+// Cerrar carrito
+
+function closeCart() {
+
+  cartOverlay.classList.remove("open");
+  cartOverlay.setAttribute("aria-hidden", "true");
+
+  document.body.style.overflow = "";
+}
+
+// Agregar productos desde el catálogo
+
+grid.addEventListener("click", event => {
+
+  const button = event.target.closest("[data-cart-add]");
+
+  if (!button) return;
+
+  addToCart(button.dataset.cartAdd);
+
+});
+
+// Modificar productos desde el carrito
+
+cartItemsContainer.addEventListener("click", event => {
+
+  const button = event.target.closest("[data-cart-action]");
+
+  if (!button) return;
+
+  updateCart(
+    button.dataset.id,
+    button.dataset.cartAction
+  );
+
+});
+
+// Botón abrir carrito
+
+document.getElementById("open-cart").addEventListener("click", openCart);
+
+// Botón cerrar carrito
+
+document.getElementById("close-cart").addEventListener("click", closeCart);
+
+// Cerrar al hacer clic fuera del panel
+
+cartOverlay.addEventListener("click", event => {
+
+  if (event.target === cartOverlay) {
+    closeCart();
+  }
+
+});
+
+// Cerrar con Escape
+
+document.addEventListener("keydown", event => {
+
+  if (
+    event.key === "Escape" &&
+    cartOverlay.classList.contains("open")
+  ) {
+    closeCart();
+  }
+
+});
+
+// Vaciar carrito
+
+document.getElementById("clear-cart").addEventListener("click", () => {
+
+  if (!cart.length) return;
+
+  if (confirm("¿Querés vaciar todo el carrito?")) {
+
+    cart = [];
+
+    saveCart();
+    renderCart();
+
+  }
+
+});
+
+// ==========================================
+// FINALIZAR PEDIDO POR WHATSAPP
+// ==========================================
+
+checkoutButton.addEventListener("click", () => {
+
+  if (!cart.length) return;
+
+  const subtotal = getCartSubtotal();
+
+  let message =
+    "¡Hola TCM Shop! Quiero realizar el siguiente pedido:\n\n";
+
+  cart.forEach(item => {
+
+    const product = getCartProduct(item.id);
+
+    if (!product) return;
+
+    const price = Number(product.precio);
+
+    message += `• ${product.nombre}\n`;
+    message += `  Cantidad: ${item.quantity}\n`;
+
+    if (price > 0) {
+
+      message += `  Precio unitario: ${money.format(price)}\n`;
+      message += `  Subtotal: ${money.format(price * item.quantity)}\n`;
+
+    } else {
+
+      message += `  Precio: A confirmar\n`;
+      message += `  Disponibilidad: A pedido\n`;
+
+    }
+
+    message += "\n";
+
+  });
+
+  message +=
+    `TOTAL CON PRECIOS CONFIRMADOS: ${money.format(subtotal)}\n\n`;
+
+  message +=
+    "El envío se calcula aparte.\n";
+
+  message +=
+    "¿Podrían confirmarme disponibilidad, precios pendientes y costo de envío?";
+
+  const url =
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank", "noopener");
+
+});
+
+// Dibujar carrito al iniciar
+
+renderCart();
 
 // ==========================================
 // AÑO DEL FOOTER
