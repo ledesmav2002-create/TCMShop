@@ -148,6 +148,7 @@
 <body>
 
 <header class="site-header">
+
   <a class="brand" href="#" aria-label="Shop inicio">
     <img class="brand-logo" src="imagenes/4.png" alt="Logo Shop">
     <span class="brand-copy">
@@ -156,29 +157,34 @@
     </span>
   </a>
 
-  
-<nav class="header-socials">
-  <a href="https://www.instagram.com/tcmshopgaming/"
-     target="_blank" rel="noopener">
-    <img src="imagenes/4.png" alt="Logo TCM Shop"
-         style="width:24px;height:24px;object-fit:contain;vertical-align:middle;">
-    TCM SHOP
-  </a>
+  <nav class="header-socials">
+    <a href="https://www.instagram.com/tcmshopgaming/"
+       target="_blank" rel="noopener">
+      <img src="imagenes/4.png" alt="Logo TCM Shop"
+           style="width:24px;height:24px;object-fit:contain;vertical-align:middle;">
+      TCM SHOP
+    </a>
 
-  <a href="https://www.instagram.com/thecollisionmajor/"
-     target="_blank" rel="noopener">
-    <img src="imagenes/1.png" alt="Logo TCM Torneos"
-         style="width:24px;height:24px;object-fit:contain;vertical-align:middle;">
-    TCM TORNEOS
-  </a>
-</nav>
+    <a href="https://www.instagram.com/thecollisionmajor/"
+       target="_blank" rel="noopener">
+      <img src="imagenes/1.png" alt="Logo TCM Torneos"
+           style="width:24px;height:24px;object-fit:contain;vertical-align:middle;">
+      TCM TORNEOS
+    </a>
+  </nav>
 
+  <!-- BOTÓN DEL CARRITO -->
+  <button class="cart-header-button" id="open-cart" type="button">
+    🛒 MI CARRITO
+    <span id="cart-count">0</span>
+  </button>
 
   <a class="header-cta"
      href="https://wa.me/5493416862971?text=Hola%20TCM%20Shop%2C%20quiero%20hacer%20una%20consulta."
      target="_blank" rel="noopener">
     WhatsApp <span>↗</span>
   </a>
+
 </header>
 
 <!-- BARRA DE ENVÍOS GRATIS -->
@@ -248,7 +254,7 @@
       </div>
 
       <p class="section-note">
-        Elegí un producto y consultá por WhatsApp.
+        Elegí tus productos y agregalos al carrito.
       </p>
     </div>
 
@@ -349,6 +355,61 @@
 
 </footer>
 
+<!-- ==========================================
+     VENTANA DEL CARRITO
+     ========================================== -->
+
+<div class="cart-overlay" id="cart-overlay" aria-hidden="true">
+
+  <section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">TCM SHOP</p>
+        <h2 id="cart-title">TU CARRITO</h2>
+      </div>
+
+      <button id="close-cart" class="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div id="cart-items" class="cart-items"></div>
+
+    <div id="cart-empty" class="cart-empty">
+      <span>🛒</span>
+      <h3>Tu carrito está vacío</h3>
+      <p>Agregá productos y prepará tu próximo upgrade.</p>
+    </div>
+
+    <div class="cart-summary">
+
+      <div class="cart-total-row">
+        <span>Subtotal con precio confirmado</span>
+        <strong id="cart-subtotal">$0</strong>
+      </div>
+
+      <p id="cart-pending-note" class="cart-pending-note" hidden>
+        Tenés productos a pedido cuyo precio debe confirmarse por WhatsApp.
+      </p>
+
+      <p class="cart-shipping-note">
+        El envío se calcula por separado. Consultá las condiciones de envío gratis.
+      </p>
+
+      <button id="checkout-cart" class="cart-checkout" type="button">
+        FINALIZAR PEDIDO POR WHATSAPP ↗
+      </button>
+
+      <button id="clear-cart" class="cart-clear" type="button">
+        Vaciar carrito
+      </button>
+
+    </div>
+
+  </section>
+
+</div>
+
+<!-- SCRIPTS: MANTENER ESTE ORDEN -->
 <script src="products.js"></script>
 <script src="script.js"></script>
 
