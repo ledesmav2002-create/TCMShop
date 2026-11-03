@@ -27,7 +27,7 @@ const PRODUCTS = [
 
   // COMBOS EN STOCK
   { id: 1, nombre: "Combo Teclado y Mouse Redragon S146", categoria: "Combos", marca: "Redragon", descripcion: "Combo gamer Redragon para equipar tu setup.", precio: 83900, imagen: "imagenes/combo146.jpg", imagenes: ["imagenes/combo1462.png", "imagenes/combo1463.png"], etiqueta: "COMBO", disponibilidad: "stock" },
-  { id: 31, nombre: "Combo Teclado y Mouse Redragon S136", categoria: "Combos", marca: "Redragon", descripcion: "Combo gamer Redragon para equipar tu setup.", precio: 83900, imagen: "imagenes/combo146.jpg", imagenes: ["imagenes/combo1362.png", "imagenes/combo1363.png"], etiqueta: "COMBO", disponibilidad: "stock" },
+  { id: 31, nombre: "Combo Teclado y Mouse Redragon S136", categoria: "Combos", marca: "Redragon", descripcion: "Combo gamer Redragon para equipar tu setup.", precio: 105900, imagen: "imagenes/combo136.png", imagenes: ["imagenes/combo1362.png", "imagenes/combo1363.png"], etiqueta: "COMBO", disponibilidad: "stock" },
 
   // MOUSES EN STOCK
   { id: 2, nombre: "Mouse Redragon King M916 Pro Inalámbrico Negro", categoria: "Mouse", marca: "Redragon", descripcion: "Mouse inalámbrico Redragon para gaming.", precio: 59900, imagen: "imagenes/mouseking1kb.jpg", imagenes: ["imagenes/kingm916n2.png", "imagenes/kingm916n3.png"], etiqueta: "WIRELESS", disponibilidad: "stock" },
